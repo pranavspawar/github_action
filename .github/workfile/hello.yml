@@ -1,0 +1,32 @@
+name: Hello demo CICD 
+
+on :
+ workflow_dispatch :
+ 
+
+
+jobs:
+ code:
+  runs-on: ubantu-latest
+  steps: 
+   -name:clone the code
+    run : echo "Clone the code"
+    
+ build:
+  runs-on: ubantu-latest
+   stpes:
+   -name : build the docker
+    run : echo "This is build stage"
+   
+ test:
+  runs-on: ubantu-latest
+  steps:
+   -name : test the code 
+    run : echo "This is test stage"
+   
+ depl:
+  runs-on: uabntu-latest
+  steps:
+   -name : deployee the code 
+    run : echo "This is deployee "
+ 
