@@ -1,0 +1,32 @@
+name: demo
+  
+on : 
+ workflow_dispatch:
+
+jobs :
+ code :
+  runs-on: ubuntu-latest
+  steps:
+   - name : Git cloning
+     run: echo"Git clone"
+ 
+ build:
+  runs-on: ubuntu-latest
+  steps:
+    - name: build the code
+      run : echo"Build the code in docker"
+
+
+ test:
+  runs-on: ubuntu-latest
+  steps:
+    - name : test the code
+      run : echo"Test the code"
+  
+ deploy:
+  runs-on : ubuntu-latest
+  steps:
+    - name: deploye the code
+      run : echo"Deploye the code"
+ 
+       
