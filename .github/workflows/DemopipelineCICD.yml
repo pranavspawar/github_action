@@ -10,9 +10,6 @@ jobs:
   code:
    runs-on: ubuntu-latest
    steps:
-     - name : chechout sourse code 
-       run: action/checkout@4
-
      - name: print message
        run: echo "code clone sussfully"
        
