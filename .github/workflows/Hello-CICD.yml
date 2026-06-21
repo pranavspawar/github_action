@@ -1,0 +1,29 @@
+name: Hello demo CICD
+
+on:
+  workflow_dispatch:
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the code
+        run: echo "Clone the code"
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build the docker
+        run: echo "This is build stage"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test the code
+        run: echo "This is test stage"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the code
+        run: echo "This is deploy stage"
