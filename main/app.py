@@ -1,6 +1,6 @@
 #Simple python code
 #check in error
-#add ruff toi check code 
+#add ruff to check code 
 
 score = 85
 
