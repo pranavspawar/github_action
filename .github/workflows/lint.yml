@@ -1,0 +1,20 @@
+name: check lint in python code
+
+on:
+ push:
+  branches:
+    - main 
+  paths:
+    - 'main/*.py'
+
+jobs:
+ Lint:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout/gitclone
+      run: actions/checkout@v7
+    - name: chech it is work or not
+      run: echo "This is done"
+ 
+ 
+     
