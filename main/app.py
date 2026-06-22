@@ -1,5 +1,6 @@
 #Simple python code
 #check in error
+#add ruff toi check code 
 
 score = 85
 
