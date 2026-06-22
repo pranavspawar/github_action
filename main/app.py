@@ -1,7 +1,7 @@
 #Simple python code
 #check in error
 #add ruff to check code 
-
+sdkjnd
 score = 85
 
 if score >= 90:
@@ -9,4 +9,4 @@ if score >= 90:
 elif score >= 80:
     print("Grade: B")
 else:
-    print("Grade: C")
+print("Grade: C")
