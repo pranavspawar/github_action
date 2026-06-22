@@ -16,12 +16,14 @@ jobs:
       
     - name: python install ruff
       run: pip install ruff
+
+    - name: fix code automatically 
+      run: ruff check --fix .
       
     - name: check code
       run: ruff check . 
 
-    - name: fix code automatically 
-      run: ruff check --fix .
+  
     
  
  
