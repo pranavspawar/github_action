@@ -19,6 +19,9 @@ jobs:
       
     - name: check code
       run: ruff check . 
+
+    - name: fix code automatically 
+      run: ruff check --fix .
     
  
  
