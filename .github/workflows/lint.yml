@@ -13,8 +13,13 @@ jobs:
   steps:
     - name: checkout/gitclone
       run: actions/checkout@v7
-    - name: chech it is work or not
-      run: echo "This is done"
+      
+    - name: python install ruff
+      run: pip install ruff
+      
+    - name: check code
+      run: ruff check . 
+    
  
  
      
