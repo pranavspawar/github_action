@@ -18,5 +18,15 @@ jobs:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+       - name : set the docker buildx
+         uses: docker/setup-build-action@v4
+
+       - name: docker build and push the code
+         uses: docker/build-push-action@v7
+         with:
+           push : true
+           tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard-frontend-master:latest
+           
+           
            
            
